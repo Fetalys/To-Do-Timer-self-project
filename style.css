@@ -17,7 +17,7 @@
     width: 100%;
     max-width: 540px;
     background: #F0F0D7;
-    margin: 100px auto 20px;
+    margin: 4.5% auto 4.5%;
     padding: 40px 30px 70px;
     border-radius: 10px;
 }
@@ -108,9 +108,7 @@ ul li span:hover{
     border-radius: 40px;
 }
 .countdowntimer {
-    margin-top: 100px;
-    margin-bottom: 20px;
-    margin-right: 150px;
+    margin: 4.5% auto 4.5%;
     border-radius: 10px;
     padding: 40px 10px 10px 10px;
     background: #F0F0D7;
