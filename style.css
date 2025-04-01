@@ -1,0 +1,147 @@
+* {
+    margin:0;
+    padding: 0;
+    font-family: "Comic Neue", sans-serif;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.card-container {
+    width: 100%;
+    display: flex;
+    min-height: 100vh;
+    background: #AAB99A;
+    padding: 10px;
+} 
+.card-body {
+    width: 100%;
+    max-width: 540px;
+    background: #F0F0D7;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+.card-body h2 {
+    background: transparent;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.card-body img {
+    width: 30px;
+    margin-left: 10px;
+    background: transparent;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #F0F0D7;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+input {
+    flex:1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+}
+button {
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #659287;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+#todo-container {
+    background: transparent;
+}
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    background: transparent;
+    
+}
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 8px;
+    left: 8px;
+}
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.checked::before {
+    background-image: url(images/check.jpg);
+}
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    background: transparent;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+}
+
+ul li span:hover{
+    background: #D0DDD0;
+    border-radius: 500px;
+}
+.countdowntimer {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    margin-right: 130px;
+    border-radius: 10px;
+    padding: 40px 10px 10px 10px;
+    background: #F0F0D7;
+}
+.countdowntimer h2 {
+    background: transparent;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 1rem;
+}
+.countdowntimer img {
+    width: 30px;
+    margin-left: 10px;
+    background: transparent;
+}
+#countdown {
+    font-size: 40px;
+    margin-left: 33%;
+    margin-top: 20%;
+    background: transparent;
+}
+
+#countdown-input {
+    margin-top: 20%;
+    margin-left: 10px;
+    background: transparent;
+}
+#countdown-input button{
+    margin-left: 10px;
+    position: absolute;
+    bottom: 150px;
+    right: 22%;
+}

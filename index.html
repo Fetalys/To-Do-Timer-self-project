@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>To Do List</title>
+</head>
+<body>
+    <!-- this is the card container-->
+    <div class="card-container">
+        <!-- this is the card elements -->
+        <div class="card-body">
+            <h2>To-Do List <img src="images/icon.png" alt=""></h2>
+            <div class="row">
+                <input type="text" name="" id="input-box" placeholder="Add your task">
+                <button onclick="addTask()">Add</button>
+            </div>
+            <ul id="todo-container">
+                <!--<li class="checked">Task 1</li>
+                <li>Task 2</li>
+                <li>Task 3</li>
+                <li>Task 4</li>--->
+            </ul>
+        </div>
+        <!-- this is the card footer -->
+        <div class="countdowntimer">
+            <!-- this is the countdown timer -->
+              <h2>Timer <img src="images/clock.jpg!sw800" alt=""></h2>
+                <h3 id="countdown">00:00:00</h3>
+               <div id="countdown-input">
+                 <input type="text" name="" id="hour" placeholder="Enter hour/s">
+                 <input type="text" name="" id="minutes" placeholder="Enter minute/s">
+                 <input type="text" name="" id="seconds" placeholder="Enter second/s">
+                 <button onclick="startTimer()">Start</button>
+               </div>
+            </div>
+        </div>
+    </div>
+<script src="todocontainer.js"></script>
+<script src="countdown.js"></script>
+</body>
+</html>
