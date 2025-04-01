@@ -105,12 +105,12 @@ ul li span {
 
 ul li span:hover{
     background: #D0DDD0;
-    border-radius: 500px;
+    border-radius: 40px;
 }
 .countdowntimer {
     margin-top: 100px;
     margin-bottom: 20px;
-    margin-right: 130px;
+    margin-right: 150px;
     border-radius: 10px;
     padding: 40px 10px 10px 10px;
     background: #F0F0D7;
@@ -143,5 +143,5 @@ ul li span:hover{
     margin-left: 10px;
     position: absolute;
     bottom: 150px;
-    right: 22%;
+    right: 23%;
 }
