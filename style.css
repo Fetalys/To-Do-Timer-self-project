@@ -140,8 +140,6 @@ ul li span:hover{
     background: transparent;
 }
 #countdown-input button{
-    margin-left: 10px;
-    position: absolute;
-    bottom: 150px;
-    right: 23%;
+    display: flex;
+    margin: 100px 200px 100px 200px;
 }
