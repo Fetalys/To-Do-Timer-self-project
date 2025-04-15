@@ -1,22 +1,46 @@
-* {
+body {
     margin:0;
     padding: 0;
     font-family: "Comic Neue", sans-serif;
-    box-sizing: border-box;
     background-color: #86A789;
-}
-
-.card-container {
-    width: 100%;
-    display: flex;
-    min-height: 100vh;
-    background: #86A789;
     background-image: url(images/heart-logo.png);
     background-size: 10%;
-    background-blend-mode: lighten;
-    padding: 10px;
-} 
-.card-body {
+}
+/*Grid Container*/
+.container {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    margin: auto auto;
+    gap: 30px;
+    grid-template-rows: repeat(6, 100px);
+    grid-template-columns: repeat(8, 100px);
+    grid-template-areas:
+    "   .       .       .       clock       clock     clock       .       ."
+    "   todo       todo       todo       .       .     timer       timer       timer"
+    "   todo       todo       todo       .       .     timer       timer       timer"
+    "   todo       todo       todo       .       .     timer       timer       timer"
+    "   todo       todo       todo       .       .     timer       timer       timer"
+    "   todo       todo       todo       .       .     timer       timer       timer";
+}
+
+/* Grid items */
+.to-do {
+    grid-area: todo;
+}
+.timer {
+    grid-area: timer;
+}
+.clock {
+    grid-area: clock;
+}
+/*CONTAINER*/
+.container {
+    width: 100vh;
+    min-height: 100vh;
+}
+/*TODO*/
+.todo-body {
     width: 100%;
     max-width: 540px;
     background: #F0F0D7;
@@ -24,13 +48,13 @@
     padding: 40px 30px 10px;
     border-radius: 10px;
 }
-.card-body h2 {
+.todo-body h2 {
     background: transparent;
     display: flex;
     align-items: center;
     margin-bottom: 20px;
 }
-.card-body img {
+.todo-body img {
     width: 30px;
     margin-left: 10px;
     background: transparent;
@@ -110,36 +134,23 @@ ul li span:hover{
     background: #D0DDD0;
     border-radius: 40px;
 }
-.clock-body {
-    width: 17%;
-    height: 10%;
-    background: #F0F0D7;
-    border-radius: 10px;
-    margin-top: 2%;
 
-}
-#clock {
-    font-size: 50px; 
-    font-weight: bold;
-    display: flex;
-    background: transparent;
-    height: fit-content;
-}
-.countdowntimer {
-    overflow: hidden;
-    margin: auto;
-    border-radius: 10px;
-    padding: 40px 10px 10px 10px;
+/*TIMER*/
+.timer-body {
+    width: 100%;
+    max-width: 540px;
     background: #F0F0D7;
+    margin: auto;
+    padding: 40px 30px 10px;
+    border-radius: 10px;
 }
-.countdowntimer h2 {
+.timer-body h2 {
     background: transparent;
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-    margin-left: 1rem;
 }
-.countdowntimer img {
+.timer-body img {
     width: 30px;
     margin-left: 10px;
     background: transparent;
@@ -151,7 +162,9 @@ ul li span:hover{
 }
 
 #countdown-input {
+    display: block;
     justify-content: center;
+    align-content: center;
     margin-top: 10%;
     background: transparent;
 }
@@ -160,4 +173,19 @@ ul li span:hover{
     margin: 10%;
     justify-self: center;
     
+}
+/*CLOCK*/
+.clock {
+    font-size: 50px; 
+    font-weight: bold;
+    display: flex;
+    background: transparent;
+    height: fit-content;
+}
+#clock-body {
+    width: auto;
+    height: 10%;
+    background: #F0F0D7;
+    border-radius: 10px;
+    margin-top: 6%;
 }
