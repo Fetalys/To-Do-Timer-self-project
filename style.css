@@ -239,6 +239,7 @@ ul li span:hover {
     .clock {
         font-size: 30px; 
         justify-content: center;
+        margin-right: 70px;
     }
 
     #clock-body {
