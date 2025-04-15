@@ -8,11 +8,9 @@
     <link rel="stylesheet" href="style.css">
     <title>To Do List</title>
 </head>
-<body>
-    <!-- this is the card container-->
-    <div class="card-container">
-        <!-- this is the card elements -->
-            <div class="card-body">
+<body class="container">
+    <div class="to-do">
+        <div class="todo-body">
             <h2>To-Do List <img src="images/icon.png" alt=""></h2>
             <div class="row">
                 <input type="text" name="" id="input-box" placeholder="Add your task">
@@ -24,22 +22,22 @@
                 <li>Task 3</li>
                 <li>Task 4</li>--->
             </ul>
-        </div>
-        <div class="clock-body">
-        <div id="clock"></div>
-        </div>
-        <div class="countdowntimer">
-            <!-- this is the countdown timer -->
-              <h2>Timer <img src="images/clock.jpg!sw800" alt=""></h2>
-                <h3 id="countdown">00:00:00</h3>
-               <div id="countdown-input">
-                 <input type="text" name="" id="hour" placeholder="Enter hour/s">
-                 <input type="text" name="" id="minutes" placeholder="Enter minute/s">
-                 <input type="text" name="" id="seconds" placeholder="Enter second/s">
-                 <button onclick="startTimer()">Start</button>
-               </div>
-            </div>
-        </div>
+    </div>
+    </div>
+    <div class="timer">
+        <div class="timer-body">
+        <h2>Timer <img src="images/clock.jpg!sw800" alt=""></h2>
+        <h3 id="countdown">00:00:00</h3>
+       <div id="countdown-input">
+         <input type="text" name="" id="hour" placeholder="Enter hour/s">
+         <input type="text" name="" id="minutes" placeholder="Enter minute/s">
+         <input type="text" name="" id="seconds" placeholder="Enter second/s">
+         <button onclick="startTimer()">Start</button>
+    </div>
+    </div>
+    </div>
+    <div class="clock">
+        <div id="clock-body"></div>
     </div>
 <script src="todocontainer.js"></script>
 <script src="countdown.js"></script>
